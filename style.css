@@ -196,14 +196,25 @@ a:hover {
     align-items: center;
     justify-content: center;
     background-color: #CBEEF1;
-    background-image: url(img/projeto.svg);
     background-position: center;
-    background-size: auto;
+    background-size: contain ;
     background-repeat: no-repeat;
     filter: grayscale(0.5);
     color: black;
     cursor: pointer;
     transition: 0.5s ease-in-out;
+}
+
+#designer {
+    background-image: url('img/capa.png');
+}
+
+#web {
+    background-image: url('img/projeto.svg')
+}
+
+#mobile {
+    background-image: url('img/mobile.svg')
 }
 
 .card-text{
@@ -237,16 +248,27 @@ a:hover {
 .card-wrapper h2{
     color: white;
     font-size: 30px;
+    font-weight: bold;
     margin: 0;
     transition: 0.5 ease-in-out;
 }
 
 .card-wrapper p{
-    color: white;
+    color: hite;
     visibility: visible;
     opacity: 0;
-    font-weight: bold;
+    font-weight: bold;    
+    color: white;
     transition: 0.5s ease-in-out;
+}
+
+#mobile .card-wrapper p{
+    color: rgb(0, 0, 0);
+}
+
+#mobile .card-wrapper h2 {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
 }
 
 .card:hover {
